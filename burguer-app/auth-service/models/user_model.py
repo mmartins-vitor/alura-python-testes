@@ -15,4 +15,4 @@ def serialize_user(user):
         "name": user.get("name", ""),
         "address": user.get("address", ""),
         "role": user.get("role", "cliente")
-    }
+        }
