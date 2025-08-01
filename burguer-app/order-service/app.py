@@ -3,8 +3,6 @@ from controllers.order_controller import order_bp
 from dotenv import load_dotenv
 import os
 
-<<<<<<< HEAD
-=======
 class OrderApp:
     def __init__(self):
         # Carrega as variáveis de ambiente
@@ -44,7 +42,6 @@ from controllers.order_controller import order_bp
 from dotenv import load_dotenv
 import os
 
->>>>>>> 14f1c5638fc5d459c596b1b8c06251699ec690ca
 # Carrega as variáveis de ambiente do arquivo .env
 load_dotenv()
 
@@ -62,9 +59,5 @@ def index():
 
 if __name__ == '__main__':
     # Executa a aplicação Flask
-<<<<<<< HEAD
-    app.run(port=5002, debug=True)
-=======
     order_app.run(port=5002, debug=True)
->>>>>>> 14f1c5638fc5d459c596b1b8c06251699ec690ca
     # O debug=True permite recarregar automaticamente a aplicação ao fazer alterações no código

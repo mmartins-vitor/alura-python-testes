@@ -3,21 +3,6 @@ from controllers.user_controller import user_bp
 from dotenv import load_dotenv
 import os
 
-<<<<<<< HEAD
-load_dotenv()
-
-app = Flask(__name__)
-app.secret_key = os.getenv("SECRET_KEY")
-
-app.register_blueprint(user_bp, url_prefix='/user')
-
-@app.route('/')
-def index():
-    return '<a href="/user/create">Cadastrar novo usuário</a>'
-
-if __name__ == '__main__':
-    app.run(port=5001, debug=True)
-=======
 class UserApp:
     def __init__(self):
         # Carrega as variáveis de ambiente
@@ -54,4 +39,3 @@ app = user_app.get_app()  # Para compatibilidade
 
 if __name__ == '__main__':
     user_app.run(port=5001, debug=True)
->>>>>>> 14f1c5638fc5d459c596b1b8c06251699ec690ca

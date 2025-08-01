@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-# Serialização para retorno (removendo dados sensíveis)
-def serialize_user(user):
-    return {
-        "email": user.get("email"),
-        "name": user.get("name"),
-        "address": user.get("address"),
-        "role": user.get("role", "cliente")
-    }
-=======
 class UserModel:
     def __init__(self, email=None, name=None, address=None, role="cliente", password=None):
         self.email = email
@@ -69,4 +59,3 @@ class UserModel:
 def serialize_user(user):
     user_model = UserModel()
     return user_model.serialize(user)
->>>>>>> 14f1c5638fc5d459c596b1b8c06251699ec690ca

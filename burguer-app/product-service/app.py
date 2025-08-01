@@ -3,21 +3,6 @@ from controllers.product_controller import product_bp
 from dotenv import load_dotenv
 import os
 
-<<<<<<< HEAD
-load_dotenv()
-
-app = Flask(__name__)
-app.secret_key = os.getenv("SECRET_KEY")
-
-app.register_blueprint(product_bp, url_prefix='/product')
-
-@app.route('/')
-def index():
-    return '<a href="/product/list">Ver produtos disponíveis</a>'
-
-if __name__ == '__main__':
-    app.run(port=5003, debug=True)
-=======
 class ProductApp:
     def __init__(self):
         # Carrega as variáveis de ambiente
@@ -54,4 +39,3 @@ app = product_app.get_app()  # Para compatibilidade
 
 if __name__ == '__main__':
     product_app.run(port=5003, debug=True)
->>>>>>> 14f1c5638fc5d459c596b1b8c06251699ec690ca

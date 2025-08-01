@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-# Serialização para retorno de produtos
-def serialize_product(product):
-    return {
-        "id": str(product.get("_id")),
-        "name": product.get("name"),
-        "description": product.get("description"),
-        "category": product.get("category"),
-        "price": product.get("price"),
-        "available": product.get("available", True),
-        "ingredients": product.get("ingredients", [])
-    }
-=======
 class ProductModel:
     def __init__(self, name=None, description=None, category=None, price=None, available=True, ingredients=None):
         self.name = name
@@ -82,4 +69,3 @@ class ProductModel:
 def serialize_product(product):
     product_model = ProductModel()
     return product_model.serialize(product)
->>>>>>> 14f1c5638fc5d459c596b1b8c06251699ec690ca
