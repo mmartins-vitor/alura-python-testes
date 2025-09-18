@@ -1,0 +1,19 @@
+[MASTER]
+init-hook = import sys, os; sys.path.append(os.path.abspath("."))
+ignore = venv,.venv,.git,__pycache__,migrations,dist,build
+
+[MESSAGES CONTROL]
+disable =
+    import-error
+
+[BASIC]
+good-names = i,j,k,ex,_,db,pk,id,app,bp,rv,ok
+
+[FORMAT]
+max-line-length = 100
+
+[SIMILARITIES]
+min-similarity-lines = 8
+
+[REPORTS]
+score = no
